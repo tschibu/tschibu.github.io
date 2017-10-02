@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>HSLU WebTec Testat Site</title>
         <meta name="author" content="Remo Schwarzentruber">
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="stylesheet" href="style/style.css" id="stylesheet">
     </head>
     <body>
-        <h1>Hello World</h1>
-        <b>bold as fuck</b>
-        <p>I'm hosted with GitHub Pages.</p>
-        <p>und nun wie geht es weiter?</p>
-        <p>easy oder?</p>
+        <header>
+            <nav>
+                <p>HEADER</p>
+            </nav>
+            <div class="topnav" id="myTopnav">
+                    <a href="#home">Home</a>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                  </div>
+        </header>
+        <aside>
+            hallo
+        </aside>
+        <selection id="content">
+            <article>
+                <input type="text" id="r" name="r" list="7ringe">
+                <datalist id="7ringe">
+                    <option value="abcde" />
+                    <option value="213" />
+                    <option value="gdfg" />
+                    <option value="ab213" />
+                </datalist>
+            </article>
+            <article>
+                    <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            </article>
+            <article>
+                <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)</p>
+            </article>
+        </selection>
+        <footer class="footer">
+            <p>&copy; Published under MIT. A Remo Schwarzentruber WebTec Project.</p>
+        </footer>
+        <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+                </script>
     </body>
 </html>

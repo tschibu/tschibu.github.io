@@ -8,8 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="style/style.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">  
-   </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+ </head>
  <body>
   <header>
    <nav class="headerIntro">
@@ -18,75 +19,17 @@
     <p>i believe that in life we only make 3 or 4 critical decisions that ultimately shape who we become.</p>
    </nav>
    <div class="topnav" id="myTopnav">
-     <a href="#home">Home</a>
-     <a href="#aboutUs">About</a>
-     <a href="#canvas">Canvas</a>
-     <a href="#contact">Contact</a>
+     <a href="#" onClick="reload('home.html');">Home</a>
+     <a href="#" onClick="reload('aboutus.html');">About</a>
+     <a href="#" onClick="reload('canvas.html');">Canvas</a>
+     <a href="#" onClick="reload('contact.html');">Contact</a>
      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
   </header>
 
-  <div id="ContentHome" class="myContent">
-      <!-- Contact -->
-      <section id="home">
-        <h2>Home</h2>
-        <article>
-          <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."</p>
-        </article>
-      </section>
-    </div>
-
-  <div id="ContentAbout" class="myContent">
-    <!--About us -->
-    <section id="aboutUs">
-      <h2>About us</h2>
-      <article>
-        <h3>Hans Lustig</h3>
-        <img src="img/hans.png" alt="Hans Lustig">
-        <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."</p>
-      </article>
-      <article>
-        <h3>Erika Wirth</h3>
-        <img src="img/erika.png" alt="Erika Wirth">
-        <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."</p>
-      </article>
-      <article>
-        <h3>Andrea Lustenberger</h3>
-        <img src="img/andrea.png" alt="Andrea Lustenberger">
-        <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."</p>
-      </article>
-    </section>
+  <div id="Content" class="myContent">
   </div>
 
-  <div id="ContentCanvas" class="myContent">
-    <!-- Canvas -->
-    <section id="canvas">
-      <h2>Canvas</h2>
-      <article>
-        <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."</p>
-      </article>
-    </section>
-  </div>
-
-  <div id="ContentContact" class="myContent">
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <form method="post">
-          <label for="fname">First Name:</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-          <label for="lname">Last Name:</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-          <label for="message">Subject:</label>
-          <textarea id="message">Write something..</textarea>
-  
-          <input type="button" onclick="sendData()" value="Submit">
-      </form>
-    </section>
-  </div>
-  
   <footer class="footer-leftright" >    
     <div class="footer-right">
       <a href="#"><i class="fa fa-facebook"></i></a>
@@ -96,13 +39,13 @@
     </div>
     <div class="footer-left">
       <p class="footer-links">
-       <a href="#home">Home</a>
+       <a href="#" onClick="reload('home.html');">Home</a>
        ·
-       <a href="#aboutUs">About</a>
+       <a href="#" onClick="reload('aboutus.html');">About</a>
        ·
-       <a href="#canvas">Canvas</a>
+       <a href="#" onClick="reload('canvas.html');">Canvas</a>
        ·
-       <a href="#contact">Contact</a>
+       <a href="#" onClick="reload('contact.html');">Contact</a>
       </p>      
       <p>&copy; Published under MIT.</p>
       <p> A Remo Schwarzentruber WebTec Project.</p>
@@ -122,6 +65,16 @@
      }
     }
   </script>
+
+  <!-- Navigation -->
+  <script>
+ function reload (what){
+  jQuery.get(what, function (data) {
+   $('#Content').html(data);
+  });
+ }
+ reload("home.html");
+</script>
  </body>
 </html>
 

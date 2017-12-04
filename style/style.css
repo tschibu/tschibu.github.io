@@ -18,6 +18,7 @@ hr {
 	text-align: center;
 }
 
+
 html {
 	overflow-y: scroll;
 }
@@ -42,6 +43,10 @@ canvas {
 
 .hidden {
 	display: none;
+}
+
+.headerImg {
+	width: 150px;
 }
 
 .errorList {
@@ -123,6 +128,10 @@ input[type="reset"], input[type="submit"] {
   
 .topnav .icon {
 	display: none;
+}
+
+.icon-font {
+	font-size: 15px;
 }
 
 

@@ -9,6 +9,10 @@ body {
 	
 }
 
+hr { 
+	border-top: 1px solid #8c8b8b;
+} 
+
 .headerIntro {
 	font-family: "Times New Roman";
 	text-align: center;
@@ -34,6 +38,23 @@ h1 {
 
 canvas {
 	border: 1px solid black;
+}
+
+.hidden {
+	display: none;
+}
+
+.errorList {
+	color: #ff0000;
+	list-style: none;
+}
+
+fieldset {
+	border: none;
+}
+
+input[type="reset"], input[type="submit"] {
+	width: 50px;
 }
 
 .canvas-draw a:link, .canvas-draw a:visited {
@@ -115,6 +136,14 @@ canvas {
 }
 
 /* Contact */
+
+#contact p{
+    line-height: 1.25em;
+    font-weight: 100;
+    margin: 0em;
+    padding: 1.25em;
+    text-align: justify;
+}
 
 /* Forms */
 form{

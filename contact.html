@@ -1,19 +1,48 @@
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="" method="post">
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact</h2>
+    <article>
+        <p>For norland produce age wishing. To figure on it spring season up. Her provision acuteness had excellent two why intention. As called mr needed praise at. Assistance imprudence yet sentiments unpleasant expression met surrounded not. Be at talked ye though secure nearer.</p>
+    </article>
+    <article>
+        <p>Consider now provided laughter boy landlord dashwood. Often voice and the spoke. No shewing fertile village equally prepare up females as an. That do an case an what plan hour of paid. Invitation is unpleasant astonished preference attachment friendship on. Did sentiments increasing particular nay. Mr he recurred received prospect in. Wishing cheered parlors adapted am at amongst matters.</p>
+    </article>
+    
+    <ul id="formError" class="hidden errorList"></ul>
+    <form onsubmit="submitForm(); return false;">
+        <fieldset>
             <label for="fname">First Name:</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
-  
+            
             <label for="lname">Last Name:</label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
             <label for="lmail">eMail</label>
             <input type="text" id="lmail" name="email" placeholder="Your email adress..">
-    
+            
             <label for="message">Subject:</label>
-            <textarea id="message">Write something..</textarea>
-    
-            <input type="submit" value="Send">
-        </form>
-      </section>
+            <textarea id="message"></textarea>
+        </fieldset>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+    <div id="frmFeedback" class="hidden">
+        <hr>
+        <p>thank you for your feedback...</p>
+                    <p>
+                    First Name: 
+                    <span id="firstNameFeedback"></span>
+                    </p>
+                    <p>
+                    Last Name: 
+                    <span id="lastNameFeedback"></span>
+                </p>
+                <p>
+                    eMail: 
+                    <span id="emailFeedback"></span>
+                </p>
+                <p>
+                    Subject: 
+                    <span id="subjectFeedback"></span>
+                </p>
+    </div>
+  </section>

@@ -28,7 +28,48 @@ function setStyleFromCookie() {
 }
 
 /**
- * 
+ * form javascript
+ */
+function submitForm() {
+	var firstNameEntered = $('#fname').val().trim();
+	var lastNameEntered = $('#lname').val().trim();
+	var emailEntered = $('#lmail').val().trim();
+	var messageEntered = $('#message').val().trim();
+	var errorList = $('ul#formError');
+	errorList.empty();
+	var error = false;
+
+	if (firstNameEntered == '') {
+		errorList.append('<li class="errorList">Please enter a first name.</li>');
+		error = true;
+	}
+	if (lastNameEntered == '') {
+		errorList.append('<li class="errorList">Please enter a last name.</li>');
+		error = true;
+	}
+	if (emailEntered == '') {
+		errorList.append('<li class="errorList">Please enter an e-mail address.</li>');
+		error = true;
+	}
+	if (messageEntered == '') {
+		errorList.append('<li class="errorList">Please enter a message.</li>');
+		error = true;
+	}
+	if (error) {
+		errorList.removeClass('hidden');
+		return;
+	}
+	$("#firstNameFeedback").html(firstNameEntered);
+	$("#lastNameFeedback").html(lastNameEntered);
+	$("#emailFeedback").html(emailEntered);
+	$("#subjectFeedback").html(messageEntered);
+	$("form").addClass('hidden');
+	$("div#frmFeedback").removeClass('hidden');
+}
+
+
+/**
+ * Document Ready functions
  */
 $(document).ready(function() {
 	$('a.cssSwitcher').each(function() {

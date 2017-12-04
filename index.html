@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <title>HSLU - Web Technologies HS2017</title>
-  <meta name="author" content="Remo Schwarzentruber">
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
-  <link rel="stylesheet" type="text/css" href="style/styleA.css" />
-  <link rel="stylesheet" type="text/css" href="style/styleB.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
- </head>
- <body class="styleA">
-  <header>
-   <nav class="headerIntro">
-    <img src="img/lucerne.png" alt="Random Name" style="width:100px">
-    <h1>Web Technologies HS2017</h1>
-   </nav>
-   <div class="topnav" id="myTopnav">
-     <a href="#" onClick="reload('home.html');">Home</a>
-     <a href="#" onClick="reload('aboutus.html');">About</a>
-     <a href="#" onClick="reload('canvas.html');">Canvas</a>
-     <a href="#" onClick="reload('contact.html');">Contact</a>
-     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-  </header>
+  <head>
+    <title>HSLU - Web Technologies HS2017</title>
+    <meta name="author" content="Remo Schwarzentruber">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/styleA.css" />
+    <link rel="stylesheet" type="text/css" href="style/styleB.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+  </head>
+  <body class="styleA">
+    <!-- Header -->
+    <header>
+      <nav class="headerIntro">
+        <img src="img/lucerne.png" alt="Lucerne Logo" style="width:100px">
+        <h1>Web Technologies HS2017</h1>
+      </nav>
+      <div class="topnav" id="myTopnav">
+        <a href="#" onClick="reload('home.html');">Home</a>
+        <a href="#" onClick="reload('aboutus.html');">About</a>
+        <a href="#" onClick="reload('canvas.html');">Canvas</a>
+        <a href="#" onClick="reload('contact.html');">Contact</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </header>
 
-  <div id="Content" class="myContent">
-  </div>
-
-  <footer class="footer-leftright" >    
-    <div class="footer-right">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-github"></i></a>
+    <!-- Content -->
+    <div id="Content" class="myContent">
     </div>
-    <div class="footer-left">
-      <p class="footer-links">
-       <a href="#" onClick="reload('home.html');">Home</a>
-       ·
-       <a href="#" onClick="reload('aboutus.html');">About</a>
-       ·
-       <a href="#" onClick="reload('canvas.html');">Canvas</a>
-       ·
-       <a href="#" onClick="reload('contact.html');">Contact</a>
-      </p>      
-      <p>&copy; Published under MIT.</p>
-      <p> A Remo Schwarzentruber WebTec Project.</p>
-      <p>Styleswitcher:
+
+    <!-- Footer -->
+    <footer class="footer-leftright" >    
+      <div class="footer-right">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+      </div>
+      <div class="footer-left">
+        <p class="footer-links">
+          <a href="#" onClick="reload('home.html');">Home</a>
+          ·
+          <a href="#" onClick="reload('aboutus.html');">About</a>
+          ·
+          <a href="#" onClick="reload('canvas.html');">Canvas</a>
+          ·
+          <a href="#" onClick="reload('contact.html');">Contact</a>
+        </p>      
+        <p>&copy; Published under MIT.</p>
+        <p> A Remo Schwarzentruber WebTec Project.</p>
+        <p>Styleswitcher:
         <p class="styleSwitcherA"><a class="cssSwitcher" id="styleA" href="#">Style A</a></p>
         <p class="styleSwitcherB"><a class="cssSwitcher" id="styleB" href="#">Style B</a></p>
       </p>
     </div>
   </footer>
+
+  <!-- Navigation -->
   <script>
     function myFunction() {
      var x = document.getElementById("myTopnav");
@@ -76,9 +81,10 @@
  }
  reload("home.html");
  </script>
- <!--  -->
- <script src="js/main.js"></script>
- </body>
+
+  <!-- Import Main Javascript -->
+  <script src="js/main.js"></script>
+  </body>
 </html>
 
 

@@ -11,6 +11,7 @@ body {
 
 .headerIntro {
 	font-family: "Times New Roman";
+	text-align: center;
 }
 
 html {
@@ -20,13 +21,16 @@ html {
 header {
 	background-color: #647E7B;
 	color: #FFF;
-	
 }
 
 section {
 	background-color: rgb(255, 255, 255);
 }
 
+h1 {
+	font-variant: small-caps;
+	text-align: center;
+}
 
 /* Navigation */
 .topnav {

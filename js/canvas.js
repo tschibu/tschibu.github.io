@@ -16,5 +16,5 @@ function drawMyCanvas(){
 			context.drawImage(img, 0, 0);
 		}
 	}
-	img.src = 'img/lucerne.png';
+	img.src = 'img/canvas.png';
 }

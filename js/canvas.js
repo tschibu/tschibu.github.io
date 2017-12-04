@@ -1,6 +1,6 @@
 // Die Canvas-Funktion beim Laden der Seite aufrufen
 if(window.addEventListener){
-	addEventListener("load", drawCanvas, false);
+	addEventListener("load", drawMyCanvas, false);
 }
 
 
@@ -16,5 +16,5 @@ function drawMyCanvas(){
 			context.drawImage(img, 0, 0);
 		}
 	}
-	img.src = '../img/lucerne.png';
+	img.src = 'img/lucerne.png';
 }

@@ -3,7 +3,6 @@ if(window.addEventListener){
 	addEventListener("load", drawMyCanvas, false);
 }
 
-
 //Canvas zeichnen
 function drawMyCanvas(){
 	var canvas = document.getElementById('myCanvasPanel');
@@ -17,4 +16,11 @@ function drawMyCanvas(){
 		}
 	}
 	img.src = 'img/canvas.png';
+}
+
+//Canvas löschen
+function clearCanvas(){
+	var canvas = document.getElementById('myCanvasPanel');
+	var context = canvas.getContext('2d');
+	context.clearRect(0, 0, canvas.width, canvas.height);
 }

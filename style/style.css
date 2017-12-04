@@ -32,6 +32,23 @@ h1 {
 	text-align: center;
 }
 
+canvas {
+	border: 1px solid black;
+}
+
+.canvas-draw a:link, .canvas-draw a:visited {
+    background-color: #526B68;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.canvas-draw a:hover, .canvas-draw a:active {
+    background-color: #262626;
+}
+
 /* Navigation */
 .topnav {
 	overflow: hidden;
@@ -157,7 +174,6 @@ h2 {
     padding: 1.25em;
     text-align: justify;
 }
-
 
 /* Footer - Start */
 

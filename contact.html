@@ -1,16 +1,19 @@
     <!-- Contact -->
     <section id="contact">
         <h2>Contact</h2>
-        <form method="post">
+        <form action="https://formspree.io/tschibu@gmail.com" method="post">
             <label for="fname">First Name:</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
   
             <label for="lname">Last Name:</label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="lmail">eMail</label>
+            <input type="text" id="lmail" name="email" placeholder="Your email adress..">
     
             <label for="message">Subject:</label>
             <textarea id="message">Write something..</textarea>
     
-            <input type="button" onclick="sendData()" value="Submit">
+            <input type="submit" value="Send">
         </form>
       </section>

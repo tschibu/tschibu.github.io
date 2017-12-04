@@ -164,7 +164,7 @@ form{
 label{
     font-size: 1.125em;
 }
-input[type=text], select {
+input[type=text], input[type=email], select {
     width: 100%;
     padding: 0.75em 1.25em;
     margin: 1em auto;
@@ -173,6 +173,7 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 input[type=button] {
     width: 100%;
     background-color: rgb(79, 79, 82);

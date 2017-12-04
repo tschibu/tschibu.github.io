@@ -49,6 +49,36 @@ canvas {
     background-color: #262626;
 }
 
+
+/* Styleswitcher styleA */
+.styleSwitcherA a:link, .styleSwitcherA a:visited {
+    background-color: #444;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+	display: inline-block;
+}
+
+.styleSwitcherA a:hover, .styleSwitcherA a:active {
+    background-color: #000000;
+}
+
+/* Styleswitcher styleB */
+.styleSwitcherB a:link, .styleSwitcherB a:visited {
+    background-color: #D7D1AF;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.styleSwitcherB a:hover, .styleSwitcherB a:active {
+    background-color: #000000;
+}
+
+
 /* Navigation */
 .topnav {
 	overflow: hidden;

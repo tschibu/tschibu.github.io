@@ -5,6 +5,7 @@ if(window.addEventListener){
 
 //Canvas zeichnen
 function drawMyCanvas(){
+	clearCanvas();
 	var canvas = document.getElementById('myCanvasPanel');
 	var img = new Image();
 	img.onload = function(){
